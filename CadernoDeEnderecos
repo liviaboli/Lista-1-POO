@@ -1,3 +1,4 @@
+QUESTAO2
 package endereco; //organizando as classes em um pacote
 
 public class CadernoDeEnderecos {//criando uma classe (representacao de um objeto) como publica
