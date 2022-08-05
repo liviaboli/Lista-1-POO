@@ -108,5 +108,6 @@ public class Main {//criando uma classe (representacao de um objeto) como public
 		}
 
 	}
+	sc.close();
 
 }
