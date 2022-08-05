@@ -12,7 +12,7 @@ public class CadernoDeEnderecos {//criando uma classe (representacao de um objet
 	public void setNome(String nome) {//criamos o metodo set da variavel nome a fim de modificar o valor e passamos por parametro
 									//o atributo a ser alterado 
 		this.nome = nome;//aqui é possivel modificar, foi o utilizado o this pois o 
-						//metodo passa por parametro o mesmo nome de um atributo da classe.
+				//metodo passa por parametro o mesmo nome de um atributo da classe.
 	}
 	//o mesmo foi feito com os outros atributos da classe
 	public String getTelefone() {
@@ -69,13 +69,13 @@ public class Main {//criando uma classe (representacao de um objeto) como public
 										  //Os métodos podem retornar qualquer tipo do seu projeto, até mesmo os criados por você.
 		
 		int continuar = 1, conti = 0;//declaramos a variavel continuar a fim de controlar se o usuario deseja continuar a preencer os dados
-									//declaramos a variavel conti para percorrer e preencher o vetor
+						//declaramos a variavel conti para percorrer e preencher o vetor
 		
 		CadernoDeEnderecos[] caderno = new CadernoDeEnderecos[1000];//alocando espaco no vetor 
 		Scanner sc = new Scanner(System.in);//Aqui a classe Scanner de java é instanciada 
-											//A classe System não pode ser estendida pois seus métodos são estáticos, sem a necessidade  
-											//de criação de uma instância em memória.
-											//“in”, uma variável que armazena a entrada padrão de dados da aplicação
+						    //A classe System não pode ser estendida pois seus métodos são estáticos, sem a necessidade  
+						   //de criação de uma instância em memória.
+						  //“in”, uma variável que armazena a entrada padrão de dados da aplicação
 		while (continuar == 1) {//o enquanto é utilizado pois não sabemos a quantidade exata de pessoas e estabelecemos uma condicao 
 								//se continuar for igual a 1 entao sera adcionado novos dados a serem preenchidos.
 			caderno[conti] = new CadernoDeEnderecos();//instanciando a variavel caderno e alocando a cada conti 
@@ -102,7 +102,7 @@ public class Main {//criando uma classe (representacao de um objeto) como public
 
 		}
 		for (int i = 0; i < conti; i++) {//se o usuario inseriu so 2 pessoas, 0 é menor que 2?sim entao
-										//ao final sera acrescentado ao i +1
+						//ao final sera acrescentado ao i +1
 			caderno[i].exibirDadosEndereco();//satisfeita a condicao sera chamado o metodo exibirDadosEndereco
 
 		}
